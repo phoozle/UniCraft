@@ -37,6 +37,10 @@ h1 {
   text-shadow: 0px 0px 5px #000;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .dotted {
   list-style-type: square;
   margin-left: 20px
@@ -47,14 +51,21 @@ h1 {
   margin-right: auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .box {
   padding: 10px 15px 10px 15px;
   box-shadow: 0px 5px 10px #333;
   border-radius: 4px;
-  width: 400px;
-  min-height: 200px;
+  width: 480px;
   background: -webkit-linear-gradient(top, rgba(#f6f6f6,1) 0%,rgba(229,229,229,0.85) 100%); /* Chrome10+,Safari5.1+ */
   text-shadow: 0px 1px #eee;
+
+  &:nth-child(n+3) {
+    margin-top: 20px;
+  }
 
   ul {
     list-style-type: none;
@@ -74,4 +85,10 @@ h1 {
       }
     }
   }
+}
+
+.code {
+  border: inset 1px #fff;
+  padding: 0px 2px 0px 2px;
+  background-color: rgba(0,0,0,0.1);
 }

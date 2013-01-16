@@ -37,4 +37,9 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.include FactoryGirl::Syntax::Methods
+
+  config.include(MailerMacros)
+  config.before(:each) { reset_email }
+  config.include(EmailSpec::Helpers)
+  config.include(EmailSpec::Matchers)
 end
